@@ -1,11 +1,16 @@
 import "./Home.css"
 import Navbar from "../../components/Navbar/Navbar"
 import Sidebar from "../../components/Sidebar/Sidebar"
-function Home() {
+import Feed from "../../components/Feed/Feed"
+function Home({sidebar}) {
+
   return (
     <div>
-      <Navbar/>
-      <Sidebar/>
+      <Sidebar sidebar={sidebar}/>
+      <div className={`container ${sidebar?"":"large-container"}`}>
+        <Feed/>
+      </div>
+    
     </div>
   )
 }

@@ -4,6 +4,7 @@ nav{
     position: sticky;
     padding: 10px 2%;
     z-index: 10;
+    background-color: #fff;
 }
 
 .nav-left .menu-icon{
@@ -27,7 +28,7 @@ nav{
     width: 400px;
     border: 0;
     outline: 0;
-    background: transparent;
+    background-color: transparent;
 }
 
 .nav-right img{
